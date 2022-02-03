@@ -3,6 +3,8 @@ from .models import Portfolio
 from .forms import ContactForm
 from django.contrib import messages
 from django.urls import reverse_lazy
+# from django.utils.translation import gettext as _
+# from django.utils import translation
 
 
 class IndexView(FormView):
