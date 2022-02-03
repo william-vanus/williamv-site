@@ -16,11 +16,15 @@ class IndexView(FormView):
         return context
 
     def form_valid(self, form, *args, **kwargs):
+        content = {
+                   'Name': form.cleaned_data['name'],
+                   'E-mail': form.cleaned_data['email'],
+                   'Message': form.cleaned_data['message']
+                   }
         #
         messages.success(self.request, 'E-mail enviado com sucesso')
         return super(IndexView, self).form_valid(form, *args, **kwargs)
 
     def form_invalid(self, form, *args, **kwargs):
-        #
         messages.error(self.request, 'Falha ao enviar e-mail')
         return super(IndexView, self).form_invalid(form, *args, **kwargs)
