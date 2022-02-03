@@ -9,7 +9,8 @@
       <div class="row py-1">
         <div class="col-lg-5 mx-auto">
 
-          <form class="vg-contact-form">
+          <form class="vg-contact-form" method="post" action="{% url 'index' %}">
+            {% csrf_token %}
             <div class="form-row">
               <div class="col-12 mt-3 wow fadeInUp">
                 <p style="text-align: left;" class="container"><strong>Whatsapp:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</strong><a href="https://wa.me/message/FE4M752E2XOKJ1" target="_blank">(71) 9409-6322</a></p>
@@ -19,14 +20,14 @@
               </div>
 
               <div class="col-12 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Name" placeholder="Nome">
+                <input class="form-control" type="text" name="name" placeholder="Nome">
               </div>
               <div class="col-12 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Email" placeholder="E-mail">
+                <input class="form-control" type="text" name="email" placeholder="E-mail">
               </div>
 
               <div class="col-12 mt-3 wow fadeInUp">
-                <textarea class="form-control" name="Message" rows="6" placeholder="Insira a mensagem aqui..."></textarea>
+                <textarea class="form-control" name="message" rows="6" placeholder="Insira a mensagem aqui..."></textarea>
               </div>
               <button type="submit" style="width:100%" class="btn btn-theme mt-3 wow fadeInUp ml-1">Enviar mensagem</button>
             </div>
