@@ -715,7 +715,7 @@ i.shipping {
 	float:right;
 }
 .subscribe-section{
-	background: url('../images/subscribe-bg.jpg') no-repeat 0px 0px;
+	background: url('../images-store/subscribe-bg.jpg') no-repeat 0px 0px;
 	background-size:cover;
 	min-height:350px;
 }
