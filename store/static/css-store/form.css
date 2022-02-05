@@ -96,7 +96,7 @@
 	left: -5px;
 	width: 15px;
 	height: 15px;
-	background: url(../images/b-arrow.png);
+	background: url(../images-store/b-arrow.png);
 	text-align: center;
 }
 .sky-form .checkbox input + i:after {
